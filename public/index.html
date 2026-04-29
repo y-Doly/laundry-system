@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laundry System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Laundry Order Management</h1>
+
+  <!-- Create Order -->
+  <section>
+    <h2>Create Order</h2>
+
+    <input type="text" id="name" placeholder="Customer Name">
+    <input type="text" id="phone" placeholder="Phone Number">
+
+    <h3>Add Garments</h3>
+    <div id="items"></div>
+
+    <button onclick="addItem()">+ Add Item</button>
+    <br><br>
+
+    <button onclick="createOrder()">Create Order</button>
+  </section>
+
+  <hr>
+
+  <!-- Filters -->
+  <section>
+    <h2>Orders</h2>
+
+    <input type="text" id="filterPhone" placeholder="Search by Phone">
+    
+    <select id="filterStatus">
+      <option value="">All Status</option>
+      <option value="RECEIVED">RECEIVED</option>
+      <option value="PROCESSING">PROCESSING</option>
+      <option value="READY">READY</option>
+      <option value="DELIVERED">DELIVERED</option>
+    </select>
+
+    <button onclick="loadOrders()">Apply Filter</button>
+  </section>
+
+  <!-- Orders Table -->
+  <table border="1" id="ordersTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Total</th>
+        <th>Status</th>
+        <th>Update</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <hr>
+
+  <!-- Dashboard -->
+  <section>
+    <h2>Dashboard</h2>
+    <p>Total Orders: <span id="totalOrders">0</span></p>
+    <p>Total Revenue: ₹<span id="totalRevenue">0</span></p>
+    <p id="statusData"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
