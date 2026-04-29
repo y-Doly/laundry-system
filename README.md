@@ -4,7 +4,7 @@
 It allows users to create orders, track their status, calculate billing, and view basic dashboard insights.
 
 
-*Featurs*
+*Features*
 1. Create Order
  a. Add customer name and phone number
  b. Add multiple garments (type, quantity, price)
