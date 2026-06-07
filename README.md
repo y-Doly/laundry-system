@@ -1,4 +1,5 @@
 **Laundry Order Mannagement System**
+
 *Overview*
   This is a simple web-based system to manage laundry orders for a dry cleaning store.
 It allows users to create orders, track their status, calculate billing, and view basic dashboard insights.
@@ -6,6 +7,7 @@ It allows users to create orders, track their status, calculate billing, and vie
 
 *Features*
 1. Create Order
+
  a. Add customer name and phone number
  b. Add multiple garments (type, quantity, price)
  c. Auto-calculates total bill
